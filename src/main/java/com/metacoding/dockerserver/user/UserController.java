@@ -10,7 +10,7 @@ public class UserController {
 
     private final UserRepository userRepository;
     
-    @GetMapping("/index")
+    @GetMapping("/")
     public String index() {
         return "<h1>hello docker</h1>";
     }
