@@ -22,8 +22,8 @@ public class UserController {
     }
 
     @GetMapping("/api/users")
-    public ResponseEntity<?> findAll() {
+    public List<User> findAll() {
         List<User> users = userRepository.findAll();
-        return Resp.ok(users);
+        return users;
     }
 }
